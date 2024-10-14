@@ -1,0 +1,40 @@
+<div class="admin-container" style="background-color: white;">
+    <div class="admin-add-user">
+        <table class="table" style="width: 100%;">
+            <tr>
+                <td>
+                    Student Name
+                </td>
+                <td>
+                    <input type="text" placeholder="Name" [(ngModel)]="name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Age
+                </td>
+                <td>
+                    <input type="text" placeholder="Age" [(ngModel)]="age">
+                </td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td>
+                    <input type="text" placeholder="city" [(ngModel)]="city">
+                </td>
+            </tr>
+            <tr>
+                <td>Student DOB</td>
+                <td>
+                    <input type="text" placeholder="dd-mm-yyyy" [(ngModel)]="dob">
+                </td>
+            </tr>
+        </table>
+        
+        <br>
+        <button class="admin-button" (click)="CreateNewUser()">Submit</button>
+        <button class="admin-button" >Reset</button>
+    </div>
+    <app-user-list></app-user-list>
+    <app-user-detail></app-user-detail>
+</div>
